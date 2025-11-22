@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #top_bar{
+            display: flex;
+            align-items: center;
+            
+        }
+        #you_tube_icon{
+            height: 30px;
+            width: 40px;
+            background-image: url("youtube.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-right: 20px;
+            display: inline-block;
+        }
+        #three_line_icon{
+            height: 30px;
+            width: 30px;
+            background-image: url("three_line.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-right: 20px;
+            display: inline-block;
+        }
+        #you_tube_text{
+            height: 30px;
+            width: 100px;
+            display: inline-block;
+        }
+        #search_container{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        #search{
+            height: 30px;
+            width: 800px;
+            padding: 8px;
+            border-radius: 20px;
+        }
+        #micro_phone{
+            height: 30px;
+            width: 30px;
+            background-color: red;
+            /* background-image: url("micro_phone.jpg"); */
+        }
+    </style>
+</head>
+<body>
+    <div id="top_bar">
+        <div id="three_line_icon"></div>
+        <div id="you_tube_icon"></div>
+         <div id="you_tube_text">YouTube</div>
+         <div id="search_container">
+             <input type="search" id="search" placeholder="search here">
+             <div id="micro_phone"></div>
+         </div>
+    </div>
+</body>
+</html>
