@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #top_bar{
+        #top_bar {
             display: flex;
             align-items: center;
-            
+
         }
-        #you_tube_icon{
+
+        #you_tube_icon {
             height: 30px;
             width: 40px;
             background-image: url("youtube.jpg");
@@ -20,7 +22,8 @@
             margin-right: 20px;
             display: inline-block;
         }
-        #three_line_icon{
+
+        #three_line_icon {
             height: 30px;
             width: 30px;
             background-image: url("three_line.jpg");
@@ -30,41 +33,150 @@
             margin-right: 20px;
             display: inline-block;
         }
-        #you_tube_text{
+
+        #you_tube_text {
             height: 30px;
             width: 100px;
+            font-size: 20px;
             display: inline-block;
+            justify-content: center;
+            align-items: center;
         }
-        #search_container{
+
+        #search_container {
             display: flex;
             align-items: center;
             gap: 10px;
         }
-        #search{
+
+        #search_icon {}
+
+        #search {
             height: 30px;
             width: 800px;
             padding: 8px;
             border-radius: 20px;
+
         }
-        #micro_phone{
+
+        #micro_phone {
             height: 30px;
             width: 30px;
-            background-color: red;
-            /* background-image: url("micro_phone.jpg"); */
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            /* background-color: red; */
+            background-image: url("micro_phone.jpg");
+        }
+
+        #create_btn {
+            height: 30px;
+            width: 90px;
+            background-color: white;
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            border: 2px solid black;
+            margin-left: 60px;
+        }
+
+        #notification {
+            height: 40px;
+            width: 60px;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            background-image: url("notification.jpg");
+
+        }
+
+        #profile_icon {
+            height: 40px;
+            width: 40px;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            background-image: url("profile_icon.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+
+        #home_icon {
+            height: 30px;
+            width: 30px;
+            margin-top: 50px;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            /* background-color: red; */
+            background-image: url("home_icon.jpg");
+        }
+
+        #shorts_icon {
+            height: 30px;
+            width: 30px;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            /* background-color: red; */
+            background-image: url("short_icon.jpg");
+        }
+
+        #subscribe {
+            height: 30px;
+            width: 30px;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            /* background-color: red; */
+            background-image: url("sub_icon.jpg");
+
+
+        }
+
+        #you_icon {
+
+            height: 30px;
+            width: 30px;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            /* background-color: red;  */
+            background-image: url("you_icon.jpg");
+
         }
     </style>
-</head>git
+</head>
+
 <body>
     <div id="top_bar">
         <div id="three_line_icon"></div>
         <div id="you_tube_icon"></div>
-         <div id="you_tube_text">YouTube</div>
-         <div id="search_container">
-             <input type="search" id="search" placeholder="search here">
-             <div id="micro_phone"></div>
-         </div>
+        <div id="you_tube_text">YouTube</div>
+        <div id="search_container">
+            <input type="search" id="search" placeholder="search here">
+            <div id="search_icon"></div>
+            <div id="micro_phone"></div>
+            <div id="create_btn">+ Create</div>
+            <div id="notification"></div>
+            <div id="profile_icon"></div>
+        </div>
     </div>
-    <div></div>
-    <div></div>
+    <div id="home_icon"></div>
+    <div id="shorts_icon"></div>
+    <div id="subscribe"></div>
+    <div id="you_icon"></div>
 </body>
+
 </html>
