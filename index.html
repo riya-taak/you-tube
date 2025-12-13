@@ -108,7 +108,7 @@
             background-size: contain;
         }
 
-        #home_icon {
+        .home_icon {
             height: 30px;
             width: 30px;
             margin-top: 50px;
@@ -116,46 +116,33 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
-            /* background-color: red; */
+             /* background-color: red;  */
             background-image: url("home_icon.jpg");
         }
-
-        #shorts_icon {
-            height: 30px;
+        .shorts_icon
+        {
+             height: 30px;
             width: 30px;
+            margin-top: 50px;
             display: inline-block;
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
-            /* background-color: red; */
-            background-image: url("short_icon.jpg");
+             background-color: red;  
+             background-image: url("short_icon.jpg");
         }
 
-        #subscribe {
-            height: 30px;
-            width: 30px;
-            display: inline-block;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
-            /* background-color: red; */
-            background-image: url("sub_icon.jpg");
+            .home_icon {
+                display: flex;
+                flex-direction: column;
+                gap:15px;
+                margin-left: 10px;
 
-
-        }
-
-        #you_icon {
-
-            height: 30px;
-            width: 30px;
-            display: inline-block;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
-            /* background-color: red;  */
-            background-image: url("you_icon.jpg");
-
-        }
+            }
+            .home_icon i
+            {
+                font-size: 24px;
+            }
     </style>
 </head>
 
@@ -173,10 +160,11 @@
             <div id="profile_icon"></div>
         </div>
     </div>
-    <div id="home_icon"></div>
-    <div id="shorts_icon"></div>
-    <div id="subscribe"></div>
-    <div id="you_icon"></div>
+    <div class="home_icon"> 
+        <i class="shorts_icon"></i>
+        <i class="subscribe"></i>
+        <i class="you_icon"></i>
+    </div>
 </body>
 
 </html>
